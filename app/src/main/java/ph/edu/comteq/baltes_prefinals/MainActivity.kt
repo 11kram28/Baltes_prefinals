@@ -189,7 +189,7 @@ fun UserList(users: List<User>) {
 
 @Composable
 fun UserCard(user: User) {
-    Card(modifier = Modifier.fillMaxWidth()) {
+    Card(modifier = Modifier.fillMaxWidth().padding(top = 16.dp)) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(text = user.name, style = MaterialTheme.typography.headlineSmall)
             Text(text = "@${user.username}", style = MaterialTheme.typography.bodyMedium)
